@@ -3,7 +3,7 @@
      TODO: Podés cambiar estos valores para personalizar
      el tema de tu restaurante
   ─────────────────────────────────────────────── */
-  --color-primario:    #2C3E50;
+  --color-primario:    #2b2c2e;
   --color-secundario:  #E67E22;
   --color-fondo:       #FAF8F5;
   --color-texto:       #333333;
@@ -25,4 +25,116 @@ body {
   font-family: var(--fuente-cuerpo);
   background-color: var(--color-fondo);
   color: var(--color-texto);
+}
+
+
+/*  menu  */
+
+.section-menu {
+  padding: 3rem 0;
+}
+.card-plato {
+  height: 100%;
+  box-shadow: 0 0.125rem 0.25rem var(--color-primario);
+  border: 1px solid var(--color-secundario);
+  background-color: var(--color-secundario);
+  border-radius: 0.375rem;
+  overflow: hidden;
+}
+
+.card-plato .card-body {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+}
+
+.card-plato .card-title {
+  margin-bottom: 0.5rem;
+}
+
+.card-plato .card-text {
+  flex: 1;
+  margin-bottom: 1rem;
+  color: #495057;
+}
+
+/*  botones  filtro */
+.container .btn-group {
+  margin-bottom: 1rem;
+}
+
+/* errores */
+.error-campo {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+/*  reservas  */
+.fila-reserva {
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.table tr.mayor-reserva td {
+  background-color: var(--color-reserva-vip) !important;
+  color: var(--color-texto);
+}
+
+
+/* resumen de las reservas */
+
+.resumen-reservas {
+  border-left: 5px solid;
+  border-top: 1px solid;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  border-radius: 6px;
+  padding: 20px;
+  margin-top: 25px;
+  box-shadow: 0 2px 8px var(--color-primario);
+}
+
+
+.resumen-reservas h3 {
+  font-size: 1.3rem;
+  color: var(--color-texto);
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+
+.resumen-reservas ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+
+.resumen-reservas li {
+  font-size: 1rem;
+  color: #495057;
+  padding: 8px 0;
+  border-bottom: 1px dashed #e9ecef;
+  display: flex;
+  justify-content: space-between; 
+}
+
+
+.resumen-reservas li:last-child {
+  border-bottom: none;
+}
+
+
+.resumen-reservas strong {
+  background-color: #e9ecef; 
+  color: var(--color-secundario);
+  padding: 2px 10px;
+  border-radius: 20px;
+  font-weight: 700;
+}
+
+/*boton reservar*/
+#btn-reservar{
+  background-color: var(--color-secundario);
 }
